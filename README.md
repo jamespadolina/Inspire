@@ -1,0 +1,2 @@
+#inspire
+A fitness application to help start a healthier lifestyle. Provides links to the best fitness apps, as well as dietary sites. Using a in system database of quotes from different athletes and movies to help inspire and motivate you in your training.

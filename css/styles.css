@@ -1,0 +1,262 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-family: 'Lobster', cursive;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    font-family: 'Lobster', cursive;
+}
+
+#main span {
+    font-size: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+body {
+    font-family: 'Coda', cursive;
+}
+
+h1  {
+    
+    text-align: center;
+    color: white;
+    height: 100px;
+    margin-top: 0;
+    padding-top: 30px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+h3 {
+    margin: 0;
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+.main {
+    text-align: center;
+}
+
+.quotes {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.main-caption {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+.parallax {
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.para1 {
+    background-image: url('../images/main.jpg');
+    height: 600px; 
+}
+
+.para2 {
+    background-image: url('../images/gym.jpg');
+    height: 600px; 
+}
+
+
+.para3 {
+    background-image: url('../images/party.jpeg');
+    height: 600px; 
+}
+
+.img-circle {
+    margin-top: 10px;
+    height: 160px;
+    width: 200px;
+}
+
+.fitness {
+    margin-top: 80px;
+}
+
+/* ABOUT PAGE:  */
+
+.mission {
+    margin: auto;
+    width: 100%;
+    background: rgba(0,0,0,.2);
+    padding: 200px 50px 200px 50px;
+    font-size: 30px;
+    color: white;
+}
+
+.mission-back {
+    background: url('../images/aboutus.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* height: 100vh; */
+}
+
+.developers {
+    padding-left: 180px;
+}
+/* QUOTES PAGE */
+
+#quotebody{
+	font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-size: 400px;
+}
+
+.quoteme {
+    margin-top: 100px;
+}
+
+#container{
+	width:800px;
+	margin:50px auto;
+	padding: 20px;
+    width:50%;
+}
+
+#container h2{
+	text-align:center;
+	color:#045;
+}
+
+#quoteContainer{
+	width:80%;
+	background: #fff;
+	padding-top: 10px; 
+	margin:30px auto;
+	text-align: center;
+    height:120px;
+    font-size: 20px;
+}
+#buttonContainer{
+	width: 100%;
+	text-align: center;
+}
+#quoteButton{
+	width:200px;
+	margin-top: 10px;
+	border:2px solid #46b8da;
+	color:white;
+	font-family: inherit;
+	font-weight: bold;
+	padding:5px;
+	text-decoration: none;
+	text-align: center;
+}
+
+#quoteButton:hover{
+	cursor:pointer;
+	background:#09c;
+	color: #fff;	
+}
+#quoteButton:active{
+	cursor: pointer;
+}
+#quoteButton{
+	display: inline-block;
+}
+#quoteGenius{
+	font-style: italic;
+	font-weight: 600;
+	text-align: center;
+}
+
+
+/*MEDIA QUERIES*/
+@media screen and(max-width:760px){
+	#quoteButton,#addNew{
+		display: block;
+	}
+}
